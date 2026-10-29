@@ -54,6 +54,36 @@ These are the three highest-cost products among all 13 products. Product 3 ranks
 
 **Business takeaway:** Shrink volume, exposure-adjusted rate, and cost identify different priorities. Stores 5 and 6 warrant investigation, while Product 1 deserves particular attention because it represents **40.8% of recorded shrink cost**. These rankings describe the supplied data and do not identify the causes of shrinkage.
 
+## Visualizations
+
+The charts use all 936 validated records and reconcile to the supporting summaries. Weighted shrinkage rates equal total shrink units divided by total available units. Recorded costs have no specified currency denomination.
+
+### 1. Ranked shrinkage units by store
+
+[View the store shrinkage ranking PNG](store_shrinkage_ranked.png)
+
+![Total shrinkage units across all six stores, ranked from highest to lowest](store_shrinkage_ranked.png)
+
+**Interpretation:** Store 6 records the highest shrink volume (**804 units**). Stores 6 and 5 together account for **48.5%** of recorded shrink units, making them priorities for investigation. This chart ranks unit volume; the store table above is ordered by cost.
+
+### 2. Product shrinkage rates and recorded costs
+
+[View the product comparison PNG](product_shrinkage_comparison.png)
+
+![Weighted shrinkage rates and recorded shrinkage costs for all 13 products](product_shrinkage_comparison.png)
+
+**Interpretation:** Product 3 has the highest weighted shrink rate (**3.06%**), while Product 1 has the highest recorded shrink cost (**10,836.00**). Together, these two products account for **61.1%** of recorded shrink cost. Both panels use the same product order, ranked by weighted rate.
+
+### 3. Shrinkage across all 12 coded months
+
+[View the monthly trend PNG](monthly_shrinkage_trend.png)
+
+![Shrinkage units and weighted shrinkage rates across coded months 01 through 12](monthly_shrinkage_trend.png)
+
+**Interpretation:** Coded month 04 has the highest shrink volume (**393 units**) and weighted rate (**1.85%**). Coded month 11 has the lowest volume (**193 units**) and weighted rate (**0.97%**). Month 04 also meets both stock-efficiency flags. These patterns support investigation without establishing causes, seasonality, or continuous inventory balances.
+
+Each PNG is **2,400 × 1,500 pixels**. Keep all three PNGs beside this README so the GitHub image links and previews resolve.
+
 ## Approach & Tools
 
 **Analysis tools:** Python, Pandas, NumPy, Matplotlib, and Seaborn for validation, descriptive analysis, and visualization.
@@ -127,4 +157,7 @@ Open the notebook and select **Restart Kernel and Run All**. Paths are relative 
 | [Store shrinkage rankings](store_shrinkage_rankings.csv) | Shrink volume, weighted rate, cost, and stock-efficiency measures for 6 stores |
 | [Product shrinkage rankings](product_rankings_complete.csv) | Shrink volume, weighted rate, and cost rankings for 13 products |
 | [Coded-month shrinkage summary](monthly_shrinkage_summary.csv) | Shrinkage, sales-volume, and inventory summaries across 12 coded months |
-| [Stock-efficiency overlap summary](inefficiency_overlap_summary.csv) | Median-based sell-through and closing-stock flags for stores, products, and coded months
+| [Stock-efficiency overlap summary](inefficiency_overlap_summary.csv) | Median-based sell-through and closing-stock flags for stores, products, and coded months |
+| [Store shrinkage visualization](store_shrinkage_ranked.png) | PNG ranking total shrink units across all 6 stores |
+| [Product shrinkage visualization](product_shrinkage_comparison.png) | PNG comparing weighted shrink rates and recorded costs for all 13 products |
+| [Monthly shrinkage visualization](monthly_shrinkage_trend.png) | PNG comparing shrink units and weighted rates across all 12 coded months |
